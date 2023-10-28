@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forgot Password</title>
+</head>
+<body>
+    <h1>Forgot Password?</h1>
+    <p>Enter your email or username below to reset your password.</p>
+
+    <form id="forgotPasswordForm">
+        <input type="email" id="email" name="email" placeholder="Email" required>
+        <button type="submit">Reset Password</button>
+    </form>
+
+    <script>
+        document.getElementById('forgotPasswordForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            var email = document.getElementById('email').value;
+
+            // TODO: Send the email and username to your server-side code via HTTP POST request.
+            console.log('Email sent:', email);
+        });
+    </script>
+
+    <p><a href="signin.html">
