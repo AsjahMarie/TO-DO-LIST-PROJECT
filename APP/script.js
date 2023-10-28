@@ -9,8 +9,8 @@ function validatePassword(password) {
 document.getElementById('registrationForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
+    const Username = document.getElementById('Username').value;
+    const Password = document.getElementById('Password').value;
 
     if (usernameTaken(username)) {
         showError('Username is already taken');
@@ -26,7 +26,26 @@ document.getElementById('registrationForm').addEventListener('submit', function(
 function showError(message) {
     document.getElementById('error-msg').innerText = message;
 }
+// A sample list of registered users
+let registeredUsers = [
+    {username: 'user1', password: 'password1'},
+    {username: 'user2', password: 'password2'},
+];
 
+// A sample registration function
+function registerUser(username, password) {
+    // Check if the username is already registered
+    for (let user of registeredUsers) {
+        if (user.username === username) {
+            console.log('Username already exists.');
+            return;
+        }
+    }
+
+    // If the username is not already registered, add it to the list of registered users
+    registeredUsers.push({username: username, password: password});
+    console.log('User successfully registered.');
+}
 // Simulated function to register the user
 function registerUser(Username, Password) {
     // Replace this with your actual registration process
