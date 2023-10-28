@@ -33,3 +33,16 @@ function registerUser(username, password) {
     console.log('User registered:', username, password);
     // This is where you would proceed to the actual registration process (e.g., send data to server)
 }
+
+// Function to handle successful login
+function handleSuccessfulLogin() {
+    // Redirect to the homepage after successful login
+    window.location.href = 'HomePage.html'; 
+}
+
+// Function to handle successful signup
+function handleSuccessfulSignup() {
+    // Redirect to the homepage after successful signup
+    window.location.href = 'HomePage.html'; 
+}
+
