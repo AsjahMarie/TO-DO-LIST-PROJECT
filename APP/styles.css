@@ -67,7 +67,7 @@ li a {
 }
 
 /* Style the icons */
-i {
+.navbar{
     margin-right: 8px;
     color: #e0fbfc; /* Main text color */
 }
