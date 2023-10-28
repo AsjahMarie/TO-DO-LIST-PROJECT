@@ -28,9 +28,9 @@ function showError(message) {
 }
 
 // Simulated function to register the user
-function registerUser(username, password) {
+function registerUser(Username, Password) {
     // Replace this with your actual registration process
-    console.log('User registered:', username, password);
+    console.log('User registered:', Username, Password);
     // This is where you would proceed to the actual registration process (e.g., send data to server)
 }
 
