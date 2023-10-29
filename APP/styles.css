@@ -70,5 +70,6 @@ li a {
 .navbar{
     margin-right: 8px;
     justify-content: left;
+    display: list-item;
     color: #e0fbfc; /* Main text color */
 }
