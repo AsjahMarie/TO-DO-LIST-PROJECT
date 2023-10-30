@@ -189,7 +189,7 @@ body {
   background-size: cover;
 }
 
-.container {
+.task-container {
   width: 400px;
   height: auto;
   min-height: 400px;
