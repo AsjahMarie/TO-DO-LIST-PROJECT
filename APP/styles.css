@@ -108,3 +108,62 @@ button {
 button:hover {
     background-color: #234a94;
 }
+
+/* Style the calendar container */
+#calendar {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Change header and footer colors */
+.fc-header-toolbar {
+    background-color: #333;
+    color: #fff;
+}
+
+.fc-footer-toolbar {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Change the day cells */
+.fc-daygrid-day {
+    border: 1px solid #ccc;
+    height: 80px;
+}
+
+/* Style the event blocks */
+.fc-event {
+    background-color: #4285F4;
+    color: #fff;
+    border: none;
+}
+
+/* Style the task list */
+/* Style the task list container */
+#task-list {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Style individual task items */
+#task-list div {
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: #f5f5f5;
+    border-radius: 3px;
+}
+
+/* Style task item text */
+#task-list div span {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* Style task time */
+#task-list div small {
+    color: #666;
+}
